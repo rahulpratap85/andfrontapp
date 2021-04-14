@@ -13,6 +13,9 @@ jobs:
     runs-on: windows-latest
 
     steps:
+    - uses: AutoModality/action-clean@v1
+    - uses: actions/checkout@v2
+    
     # checkout the repo
     - name: 'Checkout Github Action'
       uses: actions/checkout@master
